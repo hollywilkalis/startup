@@ -41,11 +41,51 @@ div, nav, header{
   background-image:url("../img/sw-hero-home.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  .hero-content {
+    padding: 0 10px;
+    h1 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .search-box-hero {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 130px;
+    display: block;
+  }
+}
+
+.background-green  {
+  background-color: $brand-color;
+}
+
+.navbar {
+  padding: 0;
+  .nav-top {
+    display: inline-block;
+    width: 100%;
+    .nav-button {
+      float: right;
+      display: inline-block;
+    }
+  }
+}
+.nav-background-green {
+  background-color: $brand-color - 40;
+  padding: 20px;
+}
+
+.sub-nav {
+  list-style: none;
 }
 
 @media screen and (min-width: 751px) {
-  .up-hero-nav, .search-box {
+  .up-nav, .search-box {
     display: none;
   }
 }

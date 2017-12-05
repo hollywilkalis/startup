@@ -498,11 +498,42 @@ div, nav, header {
 .hero {
   background-image: url("../img/sw-hero-home.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px; }
+  background-size: cover; }
+  .hero .hero-content {
+    padding: 0 10px; }
+    .hero .hero-content h1 {
+      font-size: 35px;
+      font-weight: bold; }
+    .hero .hero-content p {
+      font-size: 14px; }
+  .hero .search-box-hero {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 130px;
+    display: block; }
+
+.background-green {
+  background-color: #0db14b; }
+
+.navbar {
+  padding: 0; }
+  .navbar .nav-top {
+    display: inline-block;
+    width: 100%; }
+    .navbar .nav-top .nav-button {
+      float: right;
+      display: inline-block; }
+
+.nav-background-green {
+  background-color: #008923;
+  padding: 20px; }
+
+.sub-nav {
+  list-style: none; }
 
 @media screen and (min-width: 751px) {
-  .up-hero-nav, .search-box {
+  .up-nav, .search-box {
     display: none; } }
 @media screen and (max-width: 750px) {
   .hero-nav, .search-box-hero {
