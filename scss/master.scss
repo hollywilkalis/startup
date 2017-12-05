@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendor/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';
+div, nav, header{
+  border: 2px dashed black;
+  min-height: 4vh;
+}
+.hero {
+  background-image:url("../img/sw-hero-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+@media screen and (min-width: 751px) {
+  .up-hero-nav, .search-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hero-nav, .search-box-hero {
+    display: none;
+  }
+}
